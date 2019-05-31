@@ -1,3 +1,4 @@
+
 function formatTime(time) {
 
     var hours = Math.floor(time / 3600);
@@ -16,8 +17,8 @@ function formatTime(time) {
         seconds = '0' + seconds;
     }
       
-    //return hours + ':' + minutes + ':' + seconds;
-    process.stdout.write(hours + ' godz. ' + minutes + ' min. ' + seconds + ' sek.');
+    return hours + ' godz. ' + minutes + ' min. ' + seconds + ' sek.';
+    
 }
 
-exports.print = formatTime(time);
+exports.print = formatTime;
